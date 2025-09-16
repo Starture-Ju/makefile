@@ -5,7 +5,6 @@
 #ifndef PREPROCESS_H
 #define PREPROCESS_H
 
-#define LINE_BUFFER_SIZE 1024
 #define INIT_FILE_ERROR 1
 #define NO_NOTE -1
 #define FILE_PREPROCESSED "../Documents/preProcessText.txt"
