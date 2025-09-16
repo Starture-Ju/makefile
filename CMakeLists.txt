@@ -3,6 +3,11 @@ project(makefile C)
 
 set(CMAKE_C_STANDARD 11)
 
+
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+
 add_executable(makefile main.c
-        include/choiceIdentify.h
-        source/choiceIdentify.c)
+        source/choiceIdentify.c
+        source/preProcess.c
+        source/basicFunc.c)
+

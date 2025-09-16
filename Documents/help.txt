@@ -1,6 +1,9 @@
 -------------这是帮助文档-------------
+Usage: minimake [option1] [option2] ...
 
-
+Options:
+    --help                          Display this information
+    -v or --viberse                 Display the document preprocessed
 
 
 ------------------------------------
