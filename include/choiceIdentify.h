@@ -6,7 +6,7 @@
 #define CHOICEIDENTIFY_H
 
 #define CHOICE_MAXVOL 100
-#define HELP_TXT "../Documents/help.txt"
+#define HELP_TXT "/home/Starture/Documents/CLionFile/makefile/Documents/help.txt"
 #define MATCH_FAILED 1
 #define MATCH_SUCCESS 0
 #define IDENTIFY_SUCCESS 0

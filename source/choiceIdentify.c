@@ -41,7 +41,9 @@ int help(const char *s) {
     const char *choice = (char *)s + sizeof("--") - 1;
     if (strcmp(choice, "help") != 0) return MATCH_FAILED;
 
-    outputFile(HELP_TXT);
+    int outputStatus = outputFile(HELP_TXT);
+    if (outputStatus == FILE_NOT_FOUND) perror("error: help.txt not found");
+    if (outputStatus == FILE_CLOSE_ERROR) printf("warning: file close error");
 
     return MATCH_SUCCESS;
 }

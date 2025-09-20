@@ -7,12 +7,17 @@
 
 #define INIT_FILE_ERROR 1
 #define NO_NOTE -1
-#define FILE_PREPROCESSED "../Documents/preProcessText.txt"
-#define MAKEFILE_PATH "../Makefile"
-#define TARGET_FILE "../Minimake_cleared.mk"
+#define GRAMMAR_ERROR -2
+#define FILE_PREPROCESSED "/home/Starture/Documents/CLionFile/makefile/Documents/preProcessText.txt"
+#define MAKEFILE_PATH "/home/Starture/Documents/CLionFile/makefile/Makefile"
+#define TARGET_FILE "/home/Starture/Documents/CLionFile/makefile/Minimake_cleared.mk"
 
+//预处理函数
 int noteSearch(const char * str) ;
 int readOriginFile();
+
+//静态语法检查
+int grammarChecks();
 
 
 

@@ -3,6 +3,7 @@
 #include "preProcess.h"
 #include "include/choiceIdentify.h"
 #define COMMAND_LINE_ARG_ERROR 1
+#define GRAMMAR_ERROR_STATIC 2
 #define FUNC_INIT_FAIL 5
 
 
@@ -12,6 +13,9 @@ int init() {
         printf("%s", "Makefile 文件读取错误或不存在\n");
         return FUNCTION_INIT_FAIL;
     }
+    if (grammarChecks()) return GRAMMAR_ERROR_STATIC;
+
+
     return FUNCTION_INIT_OK;
 }
 

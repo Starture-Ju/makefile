@@ -1,1 +1,3 @@
+clean:
+	rm -f app
 
